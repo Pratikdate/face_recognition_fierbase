@@ -18,68 +18,6 @@ It has got three  parameters to  consider-  scaleFactor, minNeighbors, minSize. 
 3. Face Recognition
 Face recognition process can  be divided  into three steps- prepare training  data, train face recognizer, prediction.  Here training data will  be the images 
 present in the dataset. They will be assigned with a integer label of the student it belongs to. Database manage in following json format.
-{
-  "Attendance": {
-    "2023-05-10": {
-      "001": {
-        "Attendance time": "2023-05-10 14:32:07.504255+05:30",
-        "Lecture sub": "PPS",
-        "major": "computer",
-        "name": "Pratik"
-      },
-      "002": {
-        "Attendance time": "2023-05-10 12:40:50.772772+05:30",
-        "Lecture sub": "PPS",
-        "major": "computer",
-        "name": "Shakur"
-      }
-    }
-  },
-  "Students": {
-    "001": {
-      "Attendance time": " 00:54:34",
-      "Lecture sub": "PPS",
-      "Total attendance": 10,
-      "major": "computer",
-      "name": "Pratik"
-    },
-    "002": {
-      "Attendance date time": "00:54:34",
-      "Lecture sub": "PPS",
-      "Total attendance": 10,
-      "major": "computer",
-      "name": "Shakur"
-    },
-    "003": {
-      "Attendance date time": " 00:54:34",
-      "Lecture sub": "PPS",
-      "Total attendance": 10,
-      "major": "computer",
-      "name": "Chaten"
-    },
-    "004": {
-      "Attendance date time": " 00:54:34",
-      "Lecture sub": "PPS",
-      "Total attendance": 10,
-      "major": "computer",
-      "name": "Harish"
-    },
-    "005": {
-      "Attendance date time": " 00:54:34",
-      "Lecture sub": "PPS",
-      "Total attendance": 10,
-      "major": "computer",
-      "name": ""
-    },
-    "006": {
-      "Attendance date time": "00:54:34",
-      "Lecture sub": "PPS",
-      "Total attendance": 10,
-      "major": "computer",
-      "name": "elon"
-    }
-  }
-}
 
 4. Attendance Updation
 After face recognition process, the recognized faces will be marked  as  present  in  the  Google Firebase cloud storage  . Faculties will be updated with monthly attendance sheet at the end of every month.
